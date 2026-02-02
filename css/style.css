@@ -2578,7 +2578,7 @@ h6 {
         background: #fff;
         color: #222222; }
 .tabs_inner .tab-content .tab-pane .list {
-  max-width: 460px;
+  max-width: 1000px;
   margin: auto;
   position: relative;
   padding-top: 40px;
@@ -2589,8 +2589,7 @@ h6 {
     width: 5px;
     background: rgba(255, 255, 255, 0.2);
     position: absolute;
-    left: 46%;
-    transform: translateX(-50%);
+    left: 90px;
     top: -5px; }
   .tabs_inner .tab-content .tab-pane .list li {
     margin-bottom: 60px;
@@ -2602,9 +2601,8 @@ h6 {
       display: block;
       background: rgba(255, 255, 255, 0.2);
       position: absolute;
-      left: 46%;
-      top: 30px;
-      transform: translateX(-50%); }
+      left: 82.5px;
+      top: 30px; }
       .tabs_inner .tab-content .tab-pane .list li span:before {
         content: '';
         height: 7px;
@@ -2618,19 +2616,26 @@ h6 {
     .tabs_inner .tab-content .tab-pane .list li:last-child {
       margin-bottom: 0px; }
     .tabs_inner .tab-content .tab-pane .list li .media .d-flex {
-      padding-right: 100px; }
+      padding-right: 40px;
+      min-width: 180px;
+      max-width: 180px; }
       .tabs_inner .tab-content .tab-pane .list li .media .d-flex p {
         color: rgba(255, 255, 255, 0.75);
         margin-bottom: 0px;
         padding-top: 20px; }
+    .tabs_inner .tab-content .tab-pane .list li .media .media-body {
+      text-align: left; }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body h4 {
       color: #fff;
       font-size: 21px;
       text-transform: uppercase;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      text-align: left; }
     .tabs_inner .tab-content .tab-pane .list li .media .media-body p {
       color: rgba(255, 255, 255, 0.75);
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      text-align: left;
+      line-height: 1.8; }
 
 /* End My Tabs Area css
 ============================================================================================ */
