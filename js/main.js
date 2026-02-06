@@ -29,4 +29,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Resume Modal Logic
+    const modal = document.getElementById("resume-modal");
+    const btn = document.getElementById("resume-btn");
+    const span = document.getElementsByClassName("close-modal")[0];
+
+    if (btn && modal) {
+        btn.onclick = function() {
+            modal.style.display = "block";
+            // Disable body scroll
+            document.body.style.overflow = "hidden";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    }
 });
